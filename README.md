@@ -80,7 +80,7 @@ String password = "your_mysql_password";
 See `/screenshots` folder.
 
 ## 👨‍💻 Author
-- Name: [Your Name]
+- Name: shashank verma
 - University: Galgotias University
 - Semester: 2nd Sem
 
