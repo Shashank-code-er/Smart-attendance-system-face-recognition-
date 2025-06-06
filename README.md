@@ -1,46 +1,88 @@
-# Smart Attendance System Using Face Recognition
 
-This is a Java-based GUI project for managing student attendance using face recognition.
+# Smart Attendance System Using Face Recognition (GUI + MySQL)
 
-## Features
-- Student registration and data management
-- Placeholder for face recognition integration
-- Basic login UI with Java Swing
-- MySQL backend integration using JDBC
-- Modular project structure with DAO, Model, UI
+This is a Java-based Smart Attendance System built as part of the 2nd Semester project for the GUVI - Galgotias Project Board 2028. The application uses Java Swing for the user interface and MySQL for backend data storage. It allows digital attendance marking with time stamping, robust data validation, and modular code structure.
 
-## Technologies Used
+## 📌 Features
+- Java Swing-based graphical interface
+- MySQL database integration using JDBC
+- Attendance logging with timestamp
+- Student-wise attendance records
+- Error handling and input validation
+- Clean modular code (GUI, DAO, Model)
+- Extensible design for face recognition or biometric add-ons
+
+## 🛠 Technologies Used
 - Java (JDK 17)
-- MySQL
-- JDBC
-- Java Swing
+- Swing (GUI framework)
+- MySQL 8.x
+- JDBC (Java Database Connectivity)
+- IntelliJ IDEA / Eclipse
+- Git & GitHub
 
-## Project Structure
+## 🧱 Project Structure
 ```
-src/
-  model/       # Java model classes
-  dao/         # Data Access Objects
-  ui/          # UI components
-  util/        # Utilities like DB connection
-docs/          # Project presentation and documentation
+SmartAttendanceSystem/
+│
+├── src/
+│   ├── MainApp.java            # Entry point
+│   ├── AttendanceGUI.java      # GUI layout and actions
+│   ├── Student.java            # Student data model
+│   └── AttendanceDAO.java      # Handles database operations
+│
+├── db/
+│   └── create_tables.sql       # MySQL schema
+│
+├── screenshots/
+│   └── ui_sample.png           # UI sample screenshot
+│
+└── README.md
 ```
 
-## Setup Instructions
-1. Install JDK 17 and MySQL.
-2. Create the `students` table using:
-```sql
-CREATE TABLE students (
-  id INT PRIMARY KEY AUTO_INCREMENT,
-  name VARCHAR(100),
-  roll_number VARCHAR(50),
-  face_id VARCHAR(100)
+## 🗄️ Database Schema
+**Database:** `attendance_db`
+
+**Table:** `attendance_log`
+```
+CREATE TABLE attendance_log (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    student_name VARCHAR(255),
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 ```
-3. Update DBConnection.java with your MySQL credentials.
-4. Compile and run `MainApp.java` or `LoginUI.java`.
 
-## Contributors
-- Shashank Verma
+## 🚀 How to Run
+1. Clone the repository:
+```
+git clone https://github.com/yourusername/SmartAttendanceSystem.git
+cd SmartAttendanceSystem
+```
 
-## License
-This project is for academic purposes only.
+2. Import the project into IntelliJ IDEA or Eclipse.
+
+3. Ensure MySQL is installed and running. Create the database using the SQL script in `/db/create_tables.sql`.
+
+4. Update your JDBC credentials in `AttendanceDAO.java`:
+```java
+String url = "jdbc:mysql://localhost:3306/attendance_db";
+String username = "root";
+String password = "your_mysql_password";
+```
+
+5. Compile and run `MainApp.java`.
+
+## 🧪 Testing
+- Test valid and invalid student inputs
+- Test database connection loss
+- Validate UI responsiveness
+
+## 📷 Screenshots
+See `/screenshots` folder.
+
+## 👨‍💻 Author
+- Name: [Your Name]
+- University: Galgotias University
+- Semester: 2nd Sem
+
+## 📎 License
+This project is for academic use only.
