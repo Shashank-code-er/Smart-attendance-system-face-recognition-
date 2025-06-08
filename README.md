@@ -76,9 +76,6 @@ String password = "your_mysql_password";
 - Test database connection loss
 - Validate UI responsiveness
 
-## 📷 Screenshots
-See `/screenshots` folder.
-
 ## 👨‍💻 Author
 - Name: shashank verma
 - University: Galgotias University
