@@ -79,13 +79,13 @@ String password = "your_mysql_password";
 ## 📸 Screenshots
 
 ### 🎯 Home Page
-![Home Page]()
-
+![Home Page](https://github.com/user-attachments/assets/2c2b4220-9ac7-4b70-b8cd-c19ac8b833e2
+)
 ### 🧑‍🎓 Student Registration
-![Student Registration](screenshots/student_registration.png)
+![Student Registration](https://github.com/user-attachments/assets/5e1b3c7d-63d9-465c-bf38-e9ccb5cee8d0)
 
 ### 🔍 Search Student
-![Search Student](screenshots/search.png)
+![Search Student](https://github.com/user-attachments/assets/628dfa73-a459-45da-88a8-924ad98a9349)
 # 👨‍💻 Author
 - Name: shashank verma
 - University: Galgotias University
