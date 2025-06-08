@@ -76,7 +76,17 @@ String password = "your_mysql_password";
 - Test database connection loss
 - Validate UI responsiveness
 
-## 👨‍💻 Author
+## 📸 Screenshots
+
+### 🎯 Home Page
+![Home Page]()
+
+### 🧑‍🎓 Student Registration
+![Student Registration](screenshots/student_registration.png)
+
+### 🔍 Search Student
+![Search Student](screenshots/search.png)
+# 👨‍💻 Author
 - Name: shashank verma
 - University: Galgotias University
 - Semester: 2nd Sem
